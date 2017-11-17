@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /*border: solid 1px red;*/
 }
 
 body {
@@ -16,11 +17,6 @@ body {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-}
-
-.main-header {
-  border-bottom: double 3px black;
-  border-bottom-width: 90%;
 }
 
   .footer {
@@ -65,7 +61,17 @@ hr {
   width: 90%;
   height: 3px;
   color: black;
-  margin-bottom: 20px;
+  background-color: black;
+/*  margin-bottom: 20px;*/
+}
+
+.skinny {
+  height: 1px;
+  margin-top: -5px;
+}
+
+.hr-lower {
+  margin-bottom: 30px;
 }
 
 form {
