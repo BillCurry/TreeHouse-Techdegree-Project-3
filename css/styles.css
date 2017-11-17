@@ -8,6 +8,7 @@ body {
   margin: 0 auto;
   background: #d9d9d9;
   color: black;
+  line-height: 1.2em;
 }
 
 .wrapper {
@@ -17,7 +18,12 @@ body {
     text-align: center;
 }
 
-.footer {
+.main-header {
+  border-bottom: double 3px black;
+  border-bottom-width: 90%;
+}
+
+  .footer {
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -26,14 +32,14 @@ body {
 }
 
 h1 {
-  width: 100%;
+/*  width: 100%;*/
   background: black;
   margin: 0 0 20px 0;
   text-align: center;
   text-transform: uppercase;
   color: white;
   padding: 20px 30px;
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 
 h2 {
@@ -45,11 +51,21 @@ h2 {
 p {
   color: gray;
   font-weight: 100;
+  font-size: .8em;
+  padding: 0 15px 15px 15px;
+  line-height:
+}
+
+fieldset p {
+  padding: 0;
 }
 
 
 hr {
   width: 90%;
+  height: 3px;
+  color: black;
+  margin-bottom: 20px;
 }
 
 form {
@@ -74,6 +90,7 @@ textarea,
 select {
   background: rgba(255,255,255,0.1);
   border: none;
+  border-radius: 5%;
   font-size: 16px;
   height: auto;
   margin: 0;
@@ -86,9 +103,17 @@ select {
   margin-bottom: 30px;
 }
 
+#other_topics {
+  margin-bottom: 0px;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0 10px 8px 0;
+}
+
+#zip {
+  margin-bottom: 10px;
 }
 
 select {
@@ -114,22 +139,28 @@ button {
 }
 
 fieldset {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border: none;
 }
 
 legend {
-  font-size: 1.4em;
-  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 label {
   display: block;
+  color: gray;
   margin-bottom: 8px;
+  font-weight: lighter;
+  font-size: .8em;
 }
 
 label.light {
-  font-weight: 300;
+  font-weight: 100;
+  font-size: .9em;
   display: inline;
 }
 
@@ -140,4 +171,14 @@ label.light {
     max-width: 480px;
   }
 
+}
+
+/* Pseudo Classes
+   ========================================================================== */
+
+input::placeholder {
+  color: gray;
+  text-align: right;
+  font-size: .7em;
+  font-style: italic;
 }
