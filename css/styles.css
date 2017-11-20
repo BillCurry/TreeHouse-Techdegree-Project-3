@@ -15,7 +15,7 @@ body {
 
 
 .main-header {
-  background: #28323c;
+  background: firebrick;
   width: 100%;
   height: 70px;
   margin-bottom: 30px;
@@ -114,15 +114,24 @@ select {
   outline: 0;
   padding: 15px;
   width: 100%;
-  background-color: #edeeef;
+  background: #edeeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  transition: all 1s;
+}
+
+
 input:focus, textarea:focus {
     border: 2px solid black;
     border-radius: 5px;
+    background: ivory;
 }
 
 textarea {
@@ -146,7 +155,9 @@ input[type="checkbox"] {
 select {
   padding: 6px;
   height: 50px;
-/*  border-radius: 2px;*/
+  font-family: 'Merriweather';
+  color: gray;
+  font-size: .8em;
 }
 
 button {
@@ -239,6 +250,7 @@ input[type="email"],
 input[type="tel"],
 select {
   margin-top: 30px;
+  transition-property: background-color;
 }
 
 }

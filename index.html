@@ -27,13 +27,13 @@
           <legend>Contact Information</legend>
           <div class="container">
               <label class="flex-label" for="name">Full Name</label>
-              <input class="flex-input" type="text" id="name" name="user_name" placeholder="Required">
+              <input required class="flex-input" type="text" id="name" name="user_name" placeholder="Required">
 
               <label class="flex-label" for="email">Email Address</label>
-              <input class="flex-input" type="email" id="email" name="user_email" placeholder="Required">
+              <input required class="flex-input" type="email" id="email" name="user_email" placeholder="Required">
 
               <label class="flex-label" for="tel">Phone Number</label>
-              <input class="flex-input" type="tel" id="tel" name="user_tel">
+              <input class="flex-input" type="tel" id="tel" name="user_tel" placeholder="10-digit format">
 
               <label class="flex-label" for="address">Street Address</label>
               <input class="flex-input" type="text" id="address" name="user_address">
@@ -44,7 +44,7 @@
               <label class="flex-label" for="states">State</label>
                 <select  class="flex-select" id="states" name="user_state">
                   <optgroup label="US States">
-                  <option selected hidden disabled class="light">Choose state</option>
+                  <option selected hidden disabled placeholder="Choose state">Choose state</option>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
