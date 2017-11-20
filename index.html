@@ -16,7 +16,7 @@
               <h2>Sign up for our newsletter</h2>
               <p>Get the latest news on how your code is doing right in your inbox</p>
 <hr>
-<hr class="skinny">
+<hr id="skinny">
       </header><!--/.main-header-->
 
       <form action="index.html" method="post">
@@ -39,8 +39,9 @@
               <input class="flex-input" type="text" id="city" name="user_city">
 
               <label class="flex-label" for="states">State</label>
-                <select  class="flex-select" id="states" name="user_state" value="Choose State">
+                <select  class="flex-select" id="states" name="user_state">
                   <optgroup label="US States">
+                  <option selected hidden disabled class="light">Choose state</option>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -107,14 +108,14 @@
               <input class="flex-input" type="text" id="zip" name="user_zip">
         </div><!--/container-->
         </fieldset><!--/fieldset #1-->
-        <hr class="hr-lower">
+        <hr id="hr-lower">
         <fieldset>
           <legend>Newsletter</legend>
           <p>Select the newsletters you would like to receive</p>
 
-          <input type="checkbox" id="html_news" name="newsletter_pref"><label class="light" for="html_news">HTML News</label><br>
-          <input type="checkbox" id="css_news" name="newsletter_pref"><label class="light" for="css_news">CSS News</label><br>
-          <input type="checkbox" id="js_news" name="newsletter_pref"><label class="light" for="js_news">JavaScript News</label>
+          <input type="checkbox" id="html_news" value="html_news" name="newsletter_pref"><label class="light" for="html_news">HTML News</label><br>
+          <input type="checkbox" id="css_news" value="css_news" name="newsletter_pref"><label class="light" for="css_news">CSS News</label><br>
+          <input type="checkbox" id="js_news" value="js_news" name="newsletter_pref"><label class="light" for="js_news">JavaScript News</label>
 
           <p>Newsletter format</p>
           <input type="radio" id="html-radio" name="format_pref"><label for="html-radio" class="light">HTML</label><br>
@@ -122,10 +123,12 @@
 
           <label for="other_topics">Other topics you'd like to hear about</label>
           <textarea id="other_topics" name="user_topics"></textarea>
+
+          <button type="submit">Sign Up</button>
       </fieldset>
 
       <div class="footer">
-         <button type="submit">Sign Up</button>
+
         <p><span>&copy; The Code Review</span></p>
       </div>
 
