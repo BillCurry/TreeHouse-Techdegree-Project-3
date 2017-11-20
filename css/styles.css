@@ -127,7 +127,6 @@ textarea {
   transition: all 1s;
 }
 
-
 input:focus, textarea:focus {
     border: 2px solid black;
     border-radius: 5px;
