@@ -6,6 +6,7 @@
 body {
   font-family: 'Merriweather', serif;
   width: 100%;
+  min-width: 320px;/*is this OK to do?*/
   margin: 0 auto;
   background: #d9d9d9;
   color: black;
@@ -15,11 +16,12 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  flex-wrap: nowrap;
+  min-height: 100vh;/*is this OK to do?*/
   background: #ffffff;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 
   .footer {
@@ -66,7 +68,7 @@ fieldset p {
 
 
 hr {
-  width: 90%;
+  width: 95%;
   height: 3px;
   color: black;
   background-color: black;
@@ -81,7 +83,7 @@ hr {
 
 /*this rule is for my hr before "newsletter"*/
 #hr-lower {
-  width: 100%;
+/*  width: 100%;*/
   margin-bottom: 30px;
 }
 
@@ -197,7 +199,7 @@ label.light {
     display: flex;
 /*    flex-direction: row;*/
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 /*    margin: 0 auto;*/
 /*    width: 95%;*/
@@ -205,6 +207,11 @@ label.light {
 
   .wrapper {
     width: 100%;
+    max-width: 1225px;
+  }
+
+  body {
+    background-color: #ffffff;
   }
 
   .flex-label {
@@ -217,9 +224,9 @@ label.light {
   flex: 1 75%;
 }
 
-#zip {
-/*  flex-basis: 200px;*/
-/*  align-self: flex-start;*/
+.flex-label-zip,
+.flex-input-zip {
+  flex: 0 25%;
 }
 
 input[type="text"],
